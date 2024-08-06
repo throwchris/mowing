@@ -216,6 +216,30 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
+ // Function to change the class based on media query
+function updateClassBasedOnScreenSize() {
+            var element = document.getElementById('business');
+            var isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+            if (element) {
+                if (isMobile) {
+                    // Change class for mobile
+                    element.classList.remove('w3-xlarge');
+                    element.classList.add('w3-large');
+                } else {
+                    // Change class for desktop
+                    element.classList.remove('w3-large');
+                    element.classList.add('w3-xlarge');
+                }
+            }
+        }
+
+        // Initial check
+        updateClassBasedOnScreenSize();
+
+        // Listen for changes in screen size
+        window.addEventListener('resize', updateClassBasedOnScreenSize); 
+
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
