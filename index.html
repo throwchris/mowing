@@ -144,25 +144,7 @@ body, html {
       <img src="yard4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
   </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="yard5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="yard6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="yard7.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="yard8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
-    </div>
-    
-  </div>
+ 
 </div>
 
 <!-- Modal for full size images on click-->
@@ -225,10 +207,10 @@ function updateClassBasedOnScreenSize() {
                 if (isMobile) {
                     // Change class for mobile
                     element.classList.remove('w3-xlarge');
-                    element.classList.add('w3-large');
+                    element.classList.add('w3-small');
                 } else {
                     // Change class for desktop
-                    element.classList.remove('w3-large');
+                    element.classList.remove('w3-small');
                     element.classList.add('w3-xlarge');
                 }
             }
